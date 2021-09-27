@@ -8,9 +8,16 @@ public class LibroBiblioteca {
 	public  String autorL;
 	public String anioL;
 	public String estadoL;
-	public String fechaEntrega;
+	public String fechaEntrega = "0";
+	public String recervadoPor;
 	
 	
+	public String getRecervadoPor() {
+		return recervadoPor;
+	}
+	public void setRecervadoPor(String recervadoPor) {
+		this.recervadoPor = recervadoPor;
+	}
 	public String getCodigoL() {
 		return codigoL;
 	}
@@ -51,6 +58,8 @@ public class LibroBiblioteca {
 	public String toString() {
 		return "\nLibro: [codigo=" + codigoL + ", nombre=" + nombreL + ", autor=" + autorL + ", año="
 				+ anioL + ", estado=" + estadoL + ", fechaEntrega=" + fechaEntrega + "]";
+		
+		
 	}
 	
 }
